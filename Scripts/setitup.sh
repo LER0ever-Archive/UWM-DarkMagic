@@ -16,9 +16,10 @@ hdiutil attach ~/LER0ever/telegram.dmg
 echo 'Fetching Config from LER0ever EverVim'
 git clone https://github.com/LER0ever/EverVim
 echo 'Setting up EverVim\n\n'
-cd EverVim
-cp .vim* ~/
-chmod +x *.sh
+ln -s ~/LER0ever/EverVim/.vimrc ~/.vimrc
+ln -s ~/LER0ever/EverVim/.vimrc.before ~/.vimrc.before
+ln -s ~/LER0ever/EverVim/.vimrc.local ~/.vimrc.local
+ln -s ~/LER0ever/EverVim/.vimrc.bundles ~/.vimrc.bundles
 echo 'Welcome to EverVim, a full featured vim configuration based on spf13-vim'
 echo 'Booting EverVim ...'
 echo 'Creating Directories ...'
