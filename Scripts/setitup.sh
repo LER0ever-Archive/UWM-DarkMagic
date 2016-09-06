@@ -1,17 +1,30 @@
 #~/usr/bin/env bash
 mkdir -p ~/LER0ever
 cd ~/LER0ever
+
+# MacVim
 echo ‘Downloading MacVim DMG’
 curl -LOk -o macvim.dmg https://github.com/macvim-dev/macvim/releases/download/snapshot-107/MacVim.dmg
 hdiutil attach ~/LER0ever/macvim.dmg
+
+#Telegram
 echo ‘Downloading Telegram DMG’
 curl -LOk -o telegram.dmg https://updates.tdesktop.com/tmac/tsetup.0.10.1.dmg
 hdiutil attach ~/LER0ever/telegram.dmg
+
+#EverVim
 echo 'Fetching Config from LER0ever EverVim'
 git clone https://github.com/LER0ever/EverVim
-echo 'Setting up EverVim'
+echo 'Setting up EverVim\n\n'
 cd EverVim
 cp .vim* ~/
 chmod +x *.sh
-./Boot-EverVim.sh
+echo 'Welcome to EverVim, a full featured vim configuration based on spf13-vim'
+echo 'Booting EverVim ...'
+echo 'Creating Directories ...'
+mkdir -p ~/.vim/bundle/
+cd ~/.vim/bundle/
+echo 'Cloning Vundle Plugin Manager to bundle ...'
+git clone https://github.com/VundleVim/Vundle.vim.git vundle
+echo 'All done with this script, now run vim and execute ":BundleInstall"'
 echo 'Ready to Go.'
