@@ -1,2 +1,2 @@
-# UWM-CS-DarkMagic
-University of Wisconsin - Madison Computer Science Dark Magic
+# UWM-DarkMagic
+University of Wisconsin - Madison | Dark Magic
