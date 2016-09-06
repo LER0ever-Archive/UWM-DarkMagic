@@ -13,5 +13,5 @@ echo 'Setting up EverVim'
 cd EverVim
 cp .vim* ~/
 chmod +x *.sh
-./BootEverVim.sh
+./Boot-EverVim.sh
 echo 'Ready to Go.'
