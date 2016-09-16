@@ -27,5 +27,11 @@ mkdir -p ~/.vim/bundle/
 cd ~/.vim/bundle/
 echo 'Cloning Vundle Plugin Manager to bundle ...'
 git clone https://github.com/VundleVim/Vundle.vim.git vundle
-echo 'All done with this script, now run vim and execute ":BundleInstall"'
+echo 'All done with EverVim, now run vim and execute ":BundleInstall"'
+cd ../../LER0ever
+
+# Repos
+echo 'Fetching Common Repos ...'
+git clone https://github.com/LER0ever/HydroDev.git
+git clone https://github.com/LER0ever/Lumos.git
 echo 'Ready to Go.'
